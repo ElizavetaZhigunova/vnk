@@ -36,7 +36,6 @@
     border: 1px solid #DDDDDD;
     border-radius: 16px;
 }
-
 .Product .IMG {
     overflow: hidden;
     border-radius: 16px;
@@ -119,6 +118,7 @@
 .Product:hover {
     border-color: #63E80E; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
 }
 
 .Product .IMG img:hover {

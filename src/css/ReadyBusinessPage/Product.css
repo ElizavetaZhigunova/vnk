@@ -57,7 +57,6 @@
     align-items: center;
     border-radius: 49px;
     padding: 2px 10px 2px 10px;
-    font-family: 'Manrope';
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
@@ -112,7 +111,6 @@
 }
 
 .description-header-rb p {
-    font-family: 'Manrope';
     font-size: 14px;
     font-weight: 600;
     line-height: 18px;
@@ -127,7 +125,6 @@
 }
 
 .cost-rb {
-    font-family: 'Manrope';
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
@@ -138,7 +135,6 @@
 
 .position-rb,
 .date-rb {
-    font-family: 'Manrope';
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;

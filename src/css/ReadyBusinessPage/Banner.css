@@ -15,7 +15,6 @@
 }
 
 .readyBusinessPage-banner-title {
-    font-family: 'Manrope';
     font-size: 36px;
     font-weight: 700;
     line-height: 48px;
@@ -56,7 +55,6 @@
     padding: 12px 24px 12px 24px;
     border-radius: 32px;
     background: #EAEAEA;
-    font-family: 'Manrope';
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;

@@ -391,7 +391,10 @@ button:focus {
     gap: 5px;
     color: #142B02;
 }
-
+.Header-small .category-cont .category-line .category:hover,
+.Header .category-cont .category-line .category:hover {
+    cursor: pointer;
+}
 
 
 @media (max-width: 1024px) {
