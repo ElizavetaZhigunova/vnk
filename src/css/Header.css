@@ -643,14 +643,15 @@ button:focus {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
-
-.panel-icon {
+.panel-icon{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 18px;
     cursor: pointer;
     color: #868686;
+}
+.panel-icon img{
+    width: 20px;
 }
 .panel-icon-green {
     color: #63E80E;
