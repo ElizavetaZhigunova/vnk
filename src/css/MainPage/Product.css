@@ -110,7 +110,7 @@
 .Product .position,
 .Product .date {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.02em;
     color: #B0B0B0;
 }
@@ -162,7 +162,7 @@
 
     .Product .position,
     .Product .date {
-        font-size: 8px;  /* Adjust size as needed */
+        font-size: 10px;  /* Adjust size as needed */
     }
 
     .products .MainBlockAdvertisement {
@@ -181,7 +181,7 @@
 
     .Product .position,
     .Product .date {
-        font-size: 11px;  /* Adjust size as needed */
+        font-size: 12px;  /* Adjust size as needed */
     }
 }
 @media (max-width: 350px) {
@@ -196,7 +196,7 @@
 
     .Product .position,
     .Product .date {
-        font-size: 8px;  /* Adjust size as needed */
+        font-size: 10px;  /* Adjust size as needed */
     }
 
     .products .MainBlockAdvertisement {
