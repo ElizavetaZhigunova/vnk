@@ -1,0 +1,238 @@
+.Section4 {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 150px 72px 0;
+gap: 64px;
+width: 100%;
+height: auto;
+box-sizing: border-box;
+}
+.Section4 h2{
+width: 100%;
+height: auto;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 48px;
+text-align: center;
+letter-spacing: 0.02em;
+color: #142B02;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.Section4 .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px;
+    width: 100%;
+    height: 40vw;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    box-sizing: border-box;
+}
+
+.Section4 .cards .cards-left {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.Section4 .cards .cards-left .card-left-top{
+    width: 100%;
+    height: 54%;
+    margin-bottom: 2%;
+}
+.Section4 .cards .cards-left .cards-left-buttom{
+    width: 100%;
+    height: 49%;
+    display: flex;
+    justify-content: space-between;
+}
+.Section4 .cards .cards-left .cards-left-buttom .card-left-buttom{
+    width: 49%;
+}
+
+.Section4 .cards .cards-right {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Section4 .cards .cards-right .card-right-left{
+    width: 49%;
+    height: 100%;
+
+}
+.Section4 .cards .cards-right .cards-right-right {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+.Section4 .cards .cards-right .cards-right-right .card-right-right {
+    height: 49%;
+}
+.Section4 .cards .cards-right .cards-right-right .dawn {
+    margin-top: auto;
+}
+
+.Section4 .cards .card {
+    display: flex;
+    flex-direction: column; /* Располагает содержимое в колонку */
+    justify-content: flex-end; /* Привязывает содержимое к низу контейнера */
+    padding: 16px; /* Добавьте паддинг по необходимости */
+    box-sizing: border-box; /* Чтобы паддинг не увеличивал размер блока */
+    color: #ffffff;
+    font-size: 100%;
+    gap: 10px 0;
+}
+
+.Section4 .cards .card {
+    background-image: url('../../assets/images/Sect-Cards/Card\ \(6\).png'); /* Замените на путь к вашей картинке */
+    background-size: cover; /* Устанавливает размер изображения так, чтобы оно полностью покрывало элемент */
+    background-position: center; /* Центрирует изображение в блоке */
+    background-repeat: no-repeat; /* Запрещает повторение изображения */
+    width: 100%; /* Занимает 100% ширины родительского элемента */
+    height: auto; /* Высота зависит от ширины и пропорций */
+    box-sizing: border-box; /* Включает паддинг и границы в общую ширину и высоту */
+}
+.Section4 .cards .card2 {
+    background-image: url('../../assets/images/Sect-Cards/Card\ \(5\).png'); /* Замените на путь к вашей картинке */
+}
+.Section4 .cards .card3 {
+    background-image: url('../../assets/images/Sect-Cards/Card\ \(4\).png'); /* Замените на путь к вашей картинке */
+}
+.Section4 .cards .card4 {
+    background-image: url('../../assets/images/Sect-Cards/Card\ \(3\).png'); /* Замените на путь к вашей картинке */
+}
+.Section4 .cards .card5 {
+    background-image: url('../../assets/images/Sect-Cards/Card\ \(2\).png'); /* Замените на путь к вашей картинке */
+}
+.Section4 .cards .card6 {
+    background-image: url('../../assets/images/Sect-Cards/Card\ \(1\).png'); /* Замените на путь к вашей картинке */
+}
+@media (min-width: 1500px) {
+    .Section4 {
+        padding: 150px 15% 0;
+    }
+    .Section4 .cards {
+        height: 30vw;
+    }
+}
+@media (max-width: 1024px) {
+    .Franchise .Section4 {
+        padding: 100px 10px 0;
+    }
+    .Franchise .Section4 h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .Section4 .cards .card1 {
+        background-image: url('../../assets/images/Sect-Cards/Card1\ \(6\).png'); /* Замените на путь к вашей картинке */
+    }
+    .Section4 .cards .card2 {
+        background-image: url('../../assets/images/Sect-Cards/Card1\ \(5\).png'); /* Замените на путь к вашей картинке */
+    }
+    .Section4 .cards .card3 {
+        background-image: url('../../assets/images/Sect-Cards/Card1\ \(4\).png'); /* Замените на путь к вашей картинке */
+    }
+    .Section4 .cards .card4 {
+        background-image: url('../../assets/images/Sect-Cards/Card1\ \(3\).png'); /* Замените на путь к вашей картинке */
+    }
+    .Section4 .cards .card5 {
+        background-image: url('../../assets/images/Sect-Cards/Card1\ \(2\).png'); /* Замените на путь к вашей картинке */
+    }
+    .Section4 .cards .card6 {
+        background-image: url('../../assets/images/Sect-Cards/Card1\ \(1\).png'); /* Замените на путь к вашей картинке */
+    }
+    .Section4 .cards {
+        height: auto;
+    }
+    .Section4 .cards .cards-left {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .Section4 .cards .cards-left .card-left-top{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .Section4 .cards .cards-left .cards-left-buttom{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .Section4 .cards .cards-left .cards-left-buttom .card-left-buttom{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .Section4 .cards .cards-right {
+        width: 49%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .Section4 .cards .cards-right .card-right-left{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .Section4 .cards .cards-right .cards-right-right {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .Section4 .cards .cards-right .cards-right-right .card-right-right {
+        height: 49%;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .Section4 .cards .cards-right .cards-right-right .dawn {
+        margin-top: auto;
+        height: 200px;
+    }
+    
+}
+
+/* Медиа-запрос для мобильных телефонов (до 480px) */
+@media (max-width: 760px) {
+    .Franchise .Section4 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px 10px 0;
+        gap: 10px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .Franchise .Section4 h2{
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .Section4 .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Section4 .cards .cards-left,
+    .Section4 .cards .cards-right {
+        width: 100%;
+        max-width: 500px;
+    }
+}

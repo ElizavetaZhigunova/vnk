@@ -1,0 +1,662 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+
+}
+.full {
+   
+}
+/* /////////////////////////////////////////////////////////// */
+.HeaderCont {
+    z-index: 50;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    min-width: 100px;
+ 
+    height: auto;
+
+    background-color: #ffffff;
+
+    /* Центрирование по горизонтали */
+    left: 50%;
+    transform: translateX(-50%);
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.Header {
+    z-index: 50;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 3%;
+    gap: 12px;
+    width: 100%;
+    min-width: 100px;
+    max-width: 1700px;
+    margin: 0 auto;
+    height: auto;
+    background-color: #ffffff;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.Header-container-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: calc(100% - 730px);
+
+    min-width: 800px;
+    height: 32px;
+
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+}
+/* ////////////////////////////////////////////////// */
+.IconLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    margin: 0 auto;
+    min-width: 132px;
+    height: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-color: #ffffff;
+}
+.Marker {
+    color: gray; 
+}
+select {
+    background-color: white;     /* Фон белый */
+    color: gray;                 /* Текст серый */
+    border: none;                /* Без границы */
+    font-size: 16px;             /* Размер шрифта */
+    outline: none;               /* Убираем выделение при фокусе */
+}
+select:focus {
+    outline: none;               /* Убираем фокусное выделение */
+}
+option {
+    background-color: white;     /* Фон всплывающих опций тоже белый */
+    color: gray;                 /* Текст серый */
+    border: none;                /* Без границы */
+}
+/* ////////////////////////////////////////////////// */
+.SecondLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    margin: 0 auto;
+    min-width: 644px;
+    height: 32px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: gray;
+    background-color: white;
+
+    font-size: 16px;
+}
+.SecondLink button {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 12px;
+gap: 10px;
+
+width: 224px;
+height: 32px;
+
+background: #8DF04A;
+border-radius: 8px;
+border: 0;
+
+flex: none;
+order: 3;
+flex-grow: 0;
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 12px;
+gap: 10px;
+
+width: 224px;
+height: 32px;
+
+background: #8DF04A;
+border-radius: 8px;
+
+flex: none;
+order: 3;
+flex-grow: 0;
+
+font-size: 16px;
+}
+
+/* /////////////////////////////////////////////////////// */
+
+.Header-container-dawn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    min-width: 800px;
+    height: 72px;
+
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+.Logo {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 332px;
+    height: 52px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Logo button {
+
+display: flex;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+isolation: isolate;
+
+width: 135px;
+height: 52px;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+background: #8DF04A;
+border-radius: 8px;
+border: 0;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+
+}
+/* //////////////////////// */
+
+.search {
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 16px;
+    gap: 8px;
+
+    width: 100% ;
+    height: 48px;
+
+    background: #ffffff;
+    /* Green/100 */
+    border: 2px solid #DFF9CA;
+    border-radius: 32px;
+
+}
+.search:focus,
+.search:active {
+    outline: none; /* Убирает стандартное обводка фокуса браузера */
+    border: 4px solid #DFF9CA; /* Поддерживаем тот же цвет границы */
+    background: #FFFFFF; /* Поддерживаем тот же цвет фона */
+}
+
+.search-input {
+    box-sizing: border-box;
+    flex-grow: 1; /* Позволяет input занимать всё доступное пространство */
+    min-width: 0px;
+    padding: 0 16px; /* Отступы внутри поля ввода */
+    border: none; /* Убираем бордер для input */
+    border-radius: 32px; /* Чтобы был такой же радиус, как у контейнера */
+    outline: none; /* Убираем обводку при фокусе */
+    font-size: 16px; /* Размер шрифта для текста */
+}
+
+/* Стили для кнопки */
+.search-button {
+    /* Кнопка поиска */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 4px;
+
+margin: 0 auto;
+width: 40px;
+height: 40px;
+
+background: #9AE169;
+border-radius: 32px;
+border: 0;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+color: #000;
+
+}
+
+.search-button svg {
+    width: 20px; /* Устанавливаем ширину иконки */
+    height: 20px; /* Устанавливаем высоту иконки */
+}
+
+
+/* ////////////////////// */
+
+.Icons {
+    /* Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+width: 270px;
+height: 72px;
+left: 966px;
+top: 0px;
+
+
+}
+
+.Icons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 320px;
+    height: auto; /* Меняем на auto, чтобы контейнер мог расширяться по высоте */
+    left: 966px;
+    top: 0px;
+    font-size: 20px;
+    color:#266d00;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* General cursor style for interactive elements */
+.IconLink:hover,
+select:hover,
+option:hover,
+.Icons-container:hover,
+.SecondLink p:hover,
+button:hover,
+button:focus {
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.SecondLink button:hover,
+.search-button:hover,
+.Header-container-dawn button:hover {
+    background: #000; /* Black background on hover */
+    color: #7BE03A; /* Bright green text color on hover */
+    transition: color 0.3s, background 0.3s ease-in-out; /* Smooth transitions for color and background */
+}
+
+
+.Icons-container:hover {
+    color: #379b02; /* Slightly darker green to indicate interaction */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for SecondLink p */
+.SecondLink p:hover {
+    color: #555; /* Darker text color to indicate interaction */
+    transition: color 0.3s ease-in-out;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.Header-small .category-cont,
+.Header .category-cont {
+    width: 100%;
+    overflow-x: auto; /* Горизонтальная прокрутка */
+    overflow-y: hidden;
+    white-space: nowrap; /* Запрет переносов */
+    -ms-overflow-style: none;  /* Скрыть скроллбар в IE и Edge */
+    scrollbar-width: none;     /* Скрыть скроллбар в Firefox */
+    margin-bottom: 10px;
+}
+.Header-small .category-cont::-webkit-scrollbar,
+.Header .category-cont::-webkit-scrollbar {
+    display: none;  /* Скрыть скроллбар в Chrome, Safari и Opera */
+}
+.Header-small .category-cont .category-line,
+.Header .category-cont .category-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 1000px; /* Минимальная ширина, чтобы контейнер не уменьшался */
+    padding-left: 10px;
+}
+.Header-small .category-cont .category-line .category,
+.Header .category-cont .category-line .category {
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    margin-right: 10px;
+    gap: 5px;
+    color: #142B02;
+}
+
+
+
+@media (max-width: 1024px) {
+    .Header {
+        padding: 5px;
+        height: auto;
+    }
+    
+    /* ////////////////////////////////////////////////// */
+    
+    .Header-container-dawn {
+        min-width: 700px;
+        height: auto;
+    }
+    .Logo {
+        
+        
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+    
+        width: 262px;
+        height: 52px;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .Logo img {
+        order: 2;
+    }
+    .Logo button {
+        order: 1;
+        display: flex;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;
+        isolation: isolate;
+    
+        width: 52px;
+        height: 52px;
+        
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        
+        background: #8DF04A;
+        border-radius: 8px;
+        border: 0;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        
+    }
+    /* //////////////////////// */
+    
+    .search {
+    
+        box-sizing: border-box;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 16px;
+        gap: 8px;
+    
+        width: 100% ;
+        height: 48px;
+    
+        background: #ffffff;
+        /* Green/100 */
+        border: 2px solid #DFF9CA;
+        border-radius: 32px;
+    
+    }
+    
+    .search-input {
+        box-sizing: border-box;
+        flex-grow: 1; /* Позволяет input занимать всё доступное пространство */
+        min-width: 0px;
+        padding: 0 16px; /* Отступы внутри поля ввода */
+        border: none; /* Убираем бордер для input */
+        border-radius: 32px; /* Чтобы был такой же радиус, как у контейнера */
+        outline: none; /* Убираем обводку при фокусе */
+        font-size: 16px; /* Размер шрифта для текста */
+    }
+    
+    /* Стили для кнопки */
+    .search-button {
+        /* Кнопка поиска */
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 4px;
+    
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    
+    background: #9AE169;
+    border-radius: 32px;
+    border: 0;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: #000;
+    
+    }
+    .Icons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 50px;
+        height: auto; /* Меняем на auto, чтобы контейнер мог расширяться по высоте */
+        left: 966px;
+        top: 0px;
+        font-size: 20px;
+        color:#266d00;
+    }
+}
+    
+
+@media (max-width: 760px) {
+
+    .Header-small {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: #fff;
+        z-index: 50;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    }
+    
+    .Header-small-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 16px;
+    }
+    
+    .menu-button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        background: #8DF04A;
+        border-radius: 8px;
+        border: 0;
+        justify-content: center;
+        font-size: 20px;
+
+        width: 40px;
+        height: 40px;
+    }
+    .menu-button svg{
+        color: #000000;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo-small {
+       width: 30%; /* Установим фиксированную высоту для логотипа */
+       max-width: 120px;
+    }
+    
+    .Icons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 50px;
+        height: auto; /* Меняем на auto, чтобы контейнер мог расширяться по высоте */
+        left: 966px;
+        top: 0px;
+        font-size: 35px;
+        color: #8DF04A;
+    }
+    
+    /* Блок поиска внизу */
+    .Header-small-search {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px 2px;
+        gap: 8px;
+        width: 90%;
+        margin: 10px auto;
+        height: 38px;
+        background: #ffffff;
+        border: 2px solid #DFF9CA;
+        border-radius: 32px;
+    }
+    
+    .search-input {
+        box-sizing: border-box;
+        flex-grow: 1;
+        min-width: 0px;
+        padding: 0 16px;
+        border: none;
+        border-radius: 32px;
+        outline: none;
+        font-size: 16px;
+    }
+    
+    .search-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        background: #9AE169;
+        border-radius: 32px;
+        border: 0;
+        color: #000;
+        cursor: pointer;
+    }
+    
+}
+
+
+.BottomPanel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.panel-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    color: #868686;
+}
+.panel-icon-green {
+    color: #63E80E;
+}
+.panel-icon p {
+    margin: 0;
+    font-size: 12px;
+    color: #868686;
+}
+.panel-icon-green p{
+    color: #63E80E;
+}

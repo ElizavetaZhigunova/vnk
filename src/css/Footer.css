@@ -1,0 +1,312 @@
+.Footer {
+    /* Footer */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 50px 72px 0px;
+
+max-width: 1600px;
+min-width: 1000px;
+margin: 0 auto;
+box-sizing: border-box;
+
+background: #FFFFFF;
+
+}
+.Footer .Footer-cont{
+    /* Container */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 48px;
+    
+    min-width: 100%;
+    
+    /* White */
+    background: #FFFFFF;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+
+.Footer .Footer-cont .Footer-cont-top {
+    /* Container */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 64px;
+    min-width: 696px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.Footer .Footer-cont .Footer-cont-top .text {
+    /* Text&Link */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    flex: 1; /* Allows the .text to take up the available width */
+    min-width: 0; /* Prevents shrinking below the available width */
+    height: auto; /* Allows the height to adjust based on content */
+}
+.Footer .Footer-cont .Footer-cont-top .text h4 {
+    /* Header styling */
+    width: auto;
+    height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+.Footer .Footer-cont .Footer-cont-top .text div {
+    /* Link Container */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 100%; /* Ensure this container takes up the full width available */
+}
+.Footer .Footer-cont .Footer-cont-top .text div p {
+    /* Link styling */
+    width: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #868686;
+    margin: 0;
+    white-space: normal; /* Allow text to wrap */
+    overflow-wrap: break-word; /* Break long words if necessary */
+}
+
+
+.Footer .Footer-cont .Footer-cont-bottom {
+    /* App&Icons */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Ensures the Left and Right sections are at the edges */
+    align-items: center;
+    padding: 0px;
+    gap: 0px; /* No gap between the sections */
+
+    min-width: 696px;
+    height: 40px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.Footer .Footer-cont .Footer-cont-bottom .Left {
+    /* Download mobile app */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    /* Align to the left */
+    margin: 0; /* Remove auto margin to align to the left */
+    width: auto; /* Let width adjust to content */
+    height: 40px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.Footer .Footer-cont .Footer-cont-bottom .Right {
+    /* Social icons */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align items within the section */
+    padding: 0px;
+    gap: 16px;
+
+    /* Align to the right */
+    margin: 0; /* Remove auto margin to align to the right */
+    width: auto; /* Let width adjust to content */
+    height: 32px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.Footer .Footer-bottom{
+    /* Copyright */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 40px 0px;
+gap: 10px;
+
+min-width: 100px;
+height: 104px;
+
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.Footer .Footer-bottom p{
+    /* © ВНК */
+
+    
+    width: 103px;
+    height: 24px;
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    letter-spacing: 0.02em;
+    
+    /* Gray/300 */
+    color: #B0B0B0;
+    
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+
+@media (max-width: 1000px) {
+    .Footer {
+        min-width: 0;
+        width: 100%;
+        padding: 0px 16px; /* Уменьшаем отступы */
+    }
+
+    .Footer .Footer-cont {
+        box-sizing: border-box;
+        min-width: 0;
+        width: 100%;
+        padding: 0px 16px;
+        gap: 16px; /* Уменьшаем отступ между блоками */
+    }
+
+    .Footer .Footer-cont .Footer-cont-top {
+        flex-direction: column;
+        gap: 16px; /* Уменьшаем отступы внутри */
+        min-width: 0;
+        width: 100%;
+        align-items: flex-start;
+        box-sizing: border-box;
+        gap: 0;
+    }
+
+    .Footer .Footer-cont .Footer-cont-top .text {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        min-width: 0;
+        box-sizing: border-box;
+        gap: 0;
+    }
+
+    .Footer .Footer-cont .Footer-cont-top .text div {
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        padding: 0;
+        gap: 0;
+    }
+
+    .Footer .Footer-cont .Footer-cont-top .text h4 {
+        font-size: 12px; /* Уменьшаем размер шрифта для лучшей видимости */
+        gap: 0;
+        align-items: center;
+    }
+
+    .Footer .Footer-cont .Footer-cont-top .text div p {
+        width: 100%;
+        min-width: 0;
+        font-size: 12px; /* Уменьшаем размер шрифта для лучшей видимости */
+        gap: 0;
+    }
+
+    .Footer .Footer-cont .Footer-cont-bottom {
+        flex-direction: column; /* Выводим секции в столбик */
+        align-items: center; /* Выравниваем секции по центру */
+        margin: 0 auto;
+        min-width: 0;
+        height: auto; /* Автоматическая высота */
+    }
+
+    .Footer .Footer-cont .Footer-cont-bottom .Left {
+        flex-wrap: wrap; /* Логотипы переносятся на следующую строку */
+        gap: 8px; /* Уменьшаем отступы между логотипами */
+        min-width: 0;
+        width: 50%;
+        height: auto;
+        margin: 0 auto 10px;
+    }
+
+    .Footer .Footer-cont .Footer-cont-bottom .Right {
+        justify-content: flex-start;
+        gap: 8px; /* Уменьшаем расстояние между иконками */
+        min-width: 0;
+    }
+
+    .Footer .Footer-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0px; /* Уменьшаем отступы */
+        gap: 8px; /* Уменьшаем отступ между элементами */
+        min-width: 100px;
+        height: auto; /* Автоматическая высота */
+        border-radius: 16px;
+        margin-top: auto; /* Позиционируем Footer-bottom внизу */
+    }
+
+    .Footer .Footer-bottom p {
+        width: auto; /* Автоматическая ширина */
+        height: auto; /* Автоматическая высота */
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px; /* Уменьшаем размер шрифта */
+        line-height: 1.2; /* Устанавливаем высоту строки */
+        letter-spacing: 0.02em;
+        color: #B0B0B0;
+    }
+}

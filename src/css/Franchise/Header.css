@@ -1,0 +1,224 @@
+.Franchise .Text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 48px;
+    max-width: 600px;
+    height: auto;
+    z-index: 1;
+    flex-grow: 1;
+}
+
+.Franchise .Text-block .Text-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 100%; 
+    max-width: 600px;
+    height: auto;
+}
+
+.Franchise .Text-block .Text-cont h2 {
+    width: 100%;
+    max-width: 600px;
+    font-size: 36px;
+    line-height: 48px;
+    color: #142B02;
+}
+
+.Franchise .Text-block .Text-cont .discription {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding: 0px;
+    gap: 12px;
+    width: 100%; 
+    max-width: 600px;
+    height: auto;
+}
+
+.Franchise .Text-block .Text-cont .discription :before {
+    content: ''; 
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #8DF04A; 
+    border-radius: 50%; 
+    margin-bottom: 3px; 
+    margin-right: 5px;
+    flex-shrink: 0; 
+}
+
+.Franchise .Text-block button {
+    width: auto;
+    height: 72px;
+    padding: 20px 24px;
+    background: #63E80E;
+    border-radius: 14px;
+    border: 0;
+    font-size: 20px;
+    line-height: 32px;
+    color: #142B02;
+}
+
+.Franchise .top {
+    background-image: url('../../assets/images/Group 5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    isolation: isolate;
+    width: 100%;
+    height: auto;
+    padding: 150px 10%;
+    box-sizing: border-box;
+}
+
+.Franchise .top .Video-slider {
+    position: relative;
+    width: 100%;
+    max-width: 700px; /* Максимальная ширина блока - 100% */
+    min-width: 300px; /* Минимальная ширина для небольших экранов */
+    overflow: hidden;
+    border-radius: 50px;
+    border: 0;
+    flex-grow: 1; /* Блок будет расширяться */
+    transition: width 0.3s ease; /* Плавное изменение ширины */
+}
+
+.Franchise .top .Video-slider-inner {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.Franchise .top .Video-slider-inner iframe {
+    width: 100%;
+    height: 400px;
+    flex-shrink: 0;
+    border: 0; /* Убираем границу iframe */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    position: absolute; /* Кнопки поверх слайдера */
+    bottom: 10px; /* Отступ от нижней части слайдера */
+    width: 100%; /* Чтобы кнопки были по ширине контейнера */
+    z-index: 2; /* Чтобы кнопки были выше изображений */
+}
+
+.slider-button {
+    width: 30px; /* Ширина кнопок */
+    height: 6px; /* Высота кнопок */
+    background-color: #ccc; /* Цвет неактивных кнопок */
+    border: none;
+    border-radius: 3px; /* Кнопки круглыми */
+    margin: 0 5px; /* Отступ между кнопками */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s ease; /* Плавная анимация при наведении */
+}
+
+.slider-button.active {
+    background-color: #8DF04A; /* Цвет активной кнопки */
+}
+
+@media (max-width: 1100px) {
+    .Franchise .top {
+        background-size: contain;
+        padding: 120px 20px 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Franchise .top {
+        flex-direction: column; 
+        height: auto; 
+        padding: 100px 20px 30px;
+    }
+
+    .Franchise .Text-block {
+        width: 90%; 
+        gap: 24px; 
+    }
+
+    .Franchise .Text-block .Text-cont {
+        margin: 0 auto;
+    }
+
+    .Franchise .Text-block .Text-cont h2 {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .Franchise .Text-block .Text-cont .discription p {
+        margin: 0 auto;
+    }
+
+    .Franchise .Text-block button {
+        margin: 0 auto;
+        width: 50%;
+        font-size: 18px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .Franchise .top .Video {
+        width: 100%;
+    }
+    .Franchise .top .Video-slider {
+        border-radius: 50px;
+    }
+
+    .Franchise .top .Video-slider-inner iframe {
+        height: 393px; /* Уменьшенная высота iframe для небольших экранов */
+    }
+}
+
+@media (max-width: 760px) {
+    .Franchise .Text-block .Text-cont h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .Franchise .Text-block .Text-cont .discription {
+        font-size: 13px;
+    }
+
+    .Franchise .Text-block button {
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
+        height: 40px;
+    }
+
+    .Franchise .top .Video-slider {
+        border-radius: 22px;
+    }
+
+    .Franchise .top .Video-slider-inner iframe {
+        height: 380px; /* Еще меньше высота iframe для мобильных устройств */
+    }
+}
+@media (max-width: 550px) {
+    .Franchise .top .Video-slider-inner iframe {
+        height: 330px; /* Еще меньше высота iframe для мобильных устройств */
+    }
+    .Franchise .Text-block .Text-cont .discription p {
+        margin: 0;
+    }
+}
+@media (max-width: 400px) {
+    .Franchise .top .Video-slider-inner iframe {
+        height: 220px; /* Еще меньше высота iframe для мобильных устройств */
+    }
+}

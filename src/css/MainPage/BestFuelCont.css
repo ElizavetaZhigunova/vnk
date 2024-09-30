@@ -1,0 +1,342 @@
+.Section {
+    flex: 1 1 290px; /* Минимальная ширина 290px */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+    width: 100%; /* Гибкая ширина */
+    background: #FFFFFF; /* White */
+    border: 1px solid #F3F3F3; /* Gray/50 */
+    border-radius: 16px;
+}
+
+.Section line {
+    width: 100%; /* Линия изменяет размер вместе с секцией */
+    height: 1px;
+    border: 1px solid #F3F3F3; /* Gray/50 */
+}
+
+.Section .Header-texts {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between; /* Выравнивание по сторонам */
+    width: 100%; /* Полная ширина контейнера */
+    height: 56px;
+}
+
+.Section .Header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 100%;
+}
+
+.Section .Header-text p {
+    width: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #142B02; /* Black Green */
+    opacity: 0.5;
+}
+
+.Section .Header-text h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #142B02; /* Black Green */
+}
+
+.Section .Header-icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 73px;
+    height: 24px;
+}
+
+.Section .Header-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.Section .Header-icon h8 {
+    width: 43px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #142B02; /* Black Green */
+}
+
+.Section .line {
+    display: flex;
+    justify-content: space-between; /* Элементы распределяются по краям */
+    align-items: center;
+    width: 100%; /* Ширина 100% */
+    height: 24px;
+}
+
+.Section .line p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #142B02;
+    opacity: 0.5;
+}
+
+.Section .line h2,
+.Section .line .cost {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #142B02;
+    text-align: right; /* Выровнять текст по правому краю */
+}
+
+.Section .line .icon {
+    font-size: 25px;
+}
+
+.Section .line .cost {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Section .line .cost h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #142B02; /* Black Green */
+}
+
+.Section .line .cost p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #439F00; /* Green/600 */
+    opacity: 0.5;
+}
+
+.Section .line button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    gap: 4px;
+    width: 103px;
+    height: 32px;
+    background: #8DF04A; /* Green/400 */
+    border-radius: 32px;
+    border: 0;
+}
+
+.Section:hover {
+    background: #F9F9F9; /* Light gray background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+.Section .line button:hover {
+    background: #7EDC3D; /* Darker green background on hover */
+    transition: background 0.3s ease-in-out; /* Smooth transition */
+}
+
+.FuelCont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    min-width: 800px;
+    height: auto;
+    overflow-y: hidden;
+}
+
+.BestFuelCont {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 0px;
+    gap: 22px;
+    min-width: 800px;
+    margin-top: 50px;
+}
+
+.BestFuelCont .HeaderFuel {
+    display: flex;
+    justify-content: space-between; /* Размещаем заголовок и ссылку по краям */
+    align-items: center;
+    width: 100%;
+    height: 48px;
+}
+
+.BestFuelCont .HeaderFuel h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #183203; /* Dark Green */
+    margin: 0;
+}
+
+.BestFuelCont .HeaderFuel p {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+    color: #439F00; /* Green/600 */
+}
+
+.BestFuelCont .Buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 800px;
+    height: 48px;
+    overflow-x: auto; /* Горизонтальный скроллинг */
+    scrollbar-width: none; /* Скрытие скроллбара в Firefox */
+    -ms-overflow-style: none; /* Скрытие скроллбара в IE и Edge */
+}
+
+.BestFuelCont .Buttons::-webkit-scrollbar {
+    display: none; /* Скрытие скроллбара в Chrome, Safari и Opera */
+}
+
+
+.BestFuelCont .Buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    width: auto;
+    height: 48px;
+    background: #F5F7FD;
+    border-radius: 32px;
+    border: 0;
+    color: #272727; /* Dark Text */
+}
+
+.BestFuelCont .Buttons button:active {
+    background: rgba(154, 225, 105, 0.2);
+    color: #70A44D; /* Light Green */
+}
+
+.Section .line .cost .costDawn {
+    color: #C40300; /* Red Color */
+}
+.BestFuelCont .Buttons button:hover {
+    background: #9AE16933;
+    color: #70A44D;
+}
+
+@media (max-width: 1024px) {
+    .FuelCont {
+        min-width: 100px;
+        flex: none;
+        order: 2;
+    }
+
+    .BestFuelCont {
+        padding: 0 10px;
+        gap: 20px;
+        min-width: 100px;
+    }
+
+    .BestFuelCont .Buttons {
+        min-width: 100px;
+        order: 1;
+    }
+
+    .BestFuelCont .Buttons button {
+        height: 28px;
+    }
+
+    .BestFuelCont .HeaderFuel h2 {
+        font-size: 16px;
+    }
+
+    .BestFuelCont .HeaderFuel p {
+        font-size: 10px;
+        margin: 0; /* Устраняем отступ */
+    }
+}
+
+
+@media (max-width: 720px) {
+    .Section {
+        padding: 16px; /* Уменьшение отступа */
+        gap: 6px; /* Уменьшение промежутков */
+        box-sizing: border-box;
+    }
+
+    .Section .Header-text h4 {
+        font-size: 20px; /* Уменьшение шрифта */
+        line-height: 30px; /* Уменьшение межстрочного интервала */
+    }
+
+    .Section .Header-text p {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .Section .line p, .Section .line h2 {
+        font-size: 12px; /* Уменьшение шрифта */
+        line-height: 14px; /* Уменьшение межстрочного интервала */
+    }
+
+    .Section .line .cost h2 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .Section .line .cost p {
+        font-size: 10px;
+        line-height: 8px;
+    }
+
+    .Section .Header-icon h8 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .Section .line button {
+        padding: 6px 12px; /* Уменьшение внутреннего отступа */
+        width: auto; /* Гибкая ширина */
+        height: 32px; /* Уменьшение высоты */
+    }
+
+    .BestFuelCont .HeaderFuel h2 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .BestFuelCont .HeaderFuel p {
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .BestFuelCont .Buttons button {
+        padding: 6px 14px;
+        height: 48px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+

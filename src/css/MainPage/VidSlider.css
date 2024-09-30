@@ -1,0 +1,97 @@
+.VidCont {
+    margin-top: 50px;
+    overflow: hidden; /* Скрыть переполнение для эффекта прокрутки */
+}
+
+.VidCont h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #142B02;
+
+}
+
+.VidCont .VidSlider {
+    width: 100%; /* Полная ширина */
+}
+
+.VidCont .VidList {
+    width: calc(180px * 10); /* Общая ширина для 10 карточек с учетом отступов */
+    display: flex; /* Использовать флекс для горизонтального расположения */
+    animation: scrollVid 20s linear infinite; /* Добавить анимацию прокрутки */
+}
+
+.VidCont .Vid {
+    min-width: 170px; /* Ширина элемента видео */
+    height: 300px; /* Высота элемента видео */
+    background-color: #142B02; /* Зеленый фон */
+    border-radius: 24px;
+    color: white; /* Цвет текста */
+    display: flex; /* Центрирование текста */
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+    margin: 0 5px; /* Отступы между карточками (по 5px с каждой стороны) */
+}
+
+/* Анимация ключевых кадров */
+@keyframes scrollVid {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-180px * 10)); /* Прокрутка на ширину всех карточек */
+    }
+}
+
+
+@media (max-width: 1024px) {
+    
+    .VidCont h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .VidCont .VidList {
+        width: calc(156px * 10); /* Общая ширина для 10 карточек с учетом отступов */
+    }
+    
+    .VidCont .Vid {
+        min-width: 146px; /* Ширина элемента видео */
+        height: 260px; /* Высота элемента видео */
+        border-radius: 16px;
+    }
+    @keyframes scrollVid {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(calc(-156px * 10)); /* Прокрутка на ширину всех карточек */
+        }
+    }
+}
+@media (max-width: 760px) {
+    .VidCont h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .VidCont .VidList {
+        width: calc(110px * 10); /* Общая ширина для 10 карточек с учетом отступов */
+    }
+    
+    .VidCont .Vid {
+        min-width: 100px; /* Ширина элемента видео */
+        height: 178px; /* Высота элемента видео */
+    }
+    @keyframes scrollVid {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(calc(-110px * 10)); /* Прокрутка на ширину всех карточек */
+        }
+    }
+}

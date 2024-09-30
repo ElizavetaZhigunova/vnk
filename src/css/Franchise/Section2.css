@@ -1,0 +1,182 @@
+.Franchise .Section2 {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 72px;
+gap: 32px;
+width: 100%;
+height: auto;
+box-sizing: border-box;
+margin-top: 100px;
+}
+.Franchise .Section2 img {
+width: 50%;
+height: auto;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.Franchise .Section2 .discription {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 50%;
+height: auto;
+flex: none;
+align-self: stretch;
+flex-grow: 0;
+gap: 10px;
+}
+
+.Franchise .Section2 .discription .Text-cont {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+width: 100%;
+height: auto;
+flex: none;
+flex-grow: 1;
+}
+.Franchise .Section2 .discription .Text-cont p{
+width: 100%;
+height: 20px;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+letter-spacing: 0.02em;
+color: #142B02;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.Franchise .Section2 .discription .Text-cont h2{
+width: 100%;
+height: auto;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 48px;
+letter-spacing: 0.02em;
+color: #142B02;
+flex: none;
+align-self: stretch;
+flex-grow: 0;
+}
+.Franchise .Section2 .discription .maintext {
+width: 100%;
+height: auto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: 0.02em;
+color: #142B02;
+flex: none;
+align-self: stretch;
+flex-grow: 1;
+}
+.Franchise .Section2 .discription button {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 20px 24px;
+gap: 12px;
+width: auto;
+height: 72px;
+background: #63E80E;
+border-radius: 14px;
+border: 0;
+flex: none;
+order: 2;
+flex-grow: 0;
+/* >>>>>>>>>>>>>>>> */
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 32px;
+letter-spacing: 0.02em;
+color: #142B02;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+@media (max-width: 1024px) {
+    .Franchise .Section2 {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .Franchise .Section2 img {
+        width: 100%;
+        order: 1;
+    }
+    .Franchise .Section2 .discription {
+        width: 100%;
+        order: 0;
+
+    }
+    .Franchise .Section2 .discription .Text-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        width: 100%;
+        height: auto;
+        flex: none;
+        flex-grow: 1;
+    }
+    .Franchise .Section2 .discription .Text-cont p{
+        text-align: center;
+    }
+    .Franchise .Section2 .discription .Text-cont h2{
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    }
+    .Franchise .Section2 .discription .maintext {
+        text-align: center;
+    }
+    .Franchise .Section2 .discription button {
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 20px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Медиа-запрос для мобильных телефонов (до 480px) */
+@media (max-width: 760px) {
+    .Franchise .Section2 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+        gap: 10px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .Franchise .Section2 .discription .Text-cont h2{
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .Franchise .Section2 .discription .maintext {
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .Franchise .Section2 .discription button {
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 16px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+}

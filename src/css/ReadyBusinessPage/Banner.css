@@ -1,0 +1,118 @@
+.readyBusinessPage-banner {
+    max-width: 100%;
+    height: 214px;
+    padding: 24px;
+    background: #EAEAEA;
+    border-radius: 24px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.readyBusinessPage-banner.franchise {
+    background: #FFF197;
+}
+
+.readyBusinessPage-banner-title {
+    font-family: 'Manrope';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.readyBusinessPage-banner-image-container {
+    height: 100%;
+    width: auto;
+    margin-right: 51px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.readyBusinessPage-banner-image-container.franchise {
+    margin-right: 0;
+}
+
+.readyBusinessPage-banner-image {
+    width: 100%;
+    height: 100%;
+}
+
+.readyBusinessPage-category-container {
+    margin-top: 16px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 96px;
+    width: max-content;
+    position: relative;
+}
+
+.readyBusinessPage-category-item {
+    width: max-content;
+    height: auto;
+    padding: 12px 24px 12px 24px;
+    border-radius: 32px;
+    background: #EAEAEA;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #393939;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .readyBusinessPage-banner {
+        height: 180px;
+    }
+
+    .readyBusinessPage-banner-title {
+        font-size: 24px;
+    }
+
+    .readyBusinessPage-category-container {
+        margin-bottom: 64px;
+    }
+
+    .readyBusinessPage-category-item {
+        font-size: 12px;
+    }
+
+    .readyBusinessPage-banner-image-container {
+        height: 79%;
+        margin-right: 16px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .readyBusinessPage-banner {
+        height: 132px;
+    }
+    
+    .readyBusinessPage-banner-title {
+        font-size: 16px;
+    }
+
+    .readyBusinessPage-banner-image-container {
+        margin-right: 5px;
+        height: 54%;
+    }
+
+    .readyBusinessPage-category-container {
+        flex-wrap: wrap;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .readyBusinessPage-category-item {
+        padding: 10px 16px 10px 16px;
+        font-size: 14px;
+    }
+
+
+}

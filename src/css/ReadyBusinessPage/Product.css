@@ -1,0 +1,249 @@
+.product-rb {
+    max-width: 23.4%;
+    border-radius: 16px;
+    border: 1px solid #EAEAEA;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.product-rb.no-adv {
+    max-width: 18.2%;
+}
+
+.product-rb:hover {
+    border-color: #63E80E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.IMG-rb {
+    overflow: hidden;
+    border-radius: 16px;
+    width: calc(100% + 2px);
+    position: relative;
+    left: -1px;
+    top: -1px;
+    background-color: #F5F7FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.IMG-rb img:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+.IMG-rb img {
+    width: 100%;
+    position: relative;
+    top: -1px;
+    left: -1px;
+}
+
+.flags-container {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 49px;
+    padding: 2px 10px 2px 10px;
+    font-family: 'Manrope';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.cost-flag {
+    background-color: #FF2222;
+    color: white;
+}
+
+.installment-flag {
+    background-color: #60CD1A;
+    color: white;
+}
+
+.hit-season-flag {
+    background-color: #FFF26D;
+    color: #142B02;
+}
+
+.credit-flag {
+    background-color: #8DF04A;
+    color: #142B02;
+}
+
+.sale-flag {
+    background-color: #142B02;
+    color: white;
+}
+
+.plus-three-flag {
+    background-color: #727272;
+    color: white;
+}
+
+.description-rb {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 10px 6px 10px;
+    margin-top: 6px;
+}
+
+.description-headers-rb {
+    margin-bottom: 12px;
+}
+
+.description-header-rb {
+    display: flex;
+    color: #439F00;
+    margin-bottom: 8px;
+    justify-content: space-between;
+}
+
+.description-header-rb p {
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    max-width: 90%;
+}
+
+.description-header-icon-rb {
+    width: 20px;
+    height: 20px;
+}
+
+.cost-rb {
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #142B02;
+}
+
+.position-rb,
+.date-rb {
+    font-family: 'Manrope';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #B0B0B0;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .product-rb {
+        max-width: 31.781%;
+    }
+
+    .product-rb.no-adv {
+        max-width: 21.9%;
+    }
+
+    .IMG-rb img {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .readyBusiness-recommendations-left-side {
+        max-width: 100%;
+    }
+
+    .readyBusiness-recommendations-container {
+        flex-direction: column;
+    }
+
+    .product-rb {
+        max-width: 23.4%;
+    }
+
+    .product-rb.no-adv {
+        max-width: 23.4%;
+    }
+
+    .description-header-rb p {
+        font-size: 12px;
+    }
+
+    .flags-container {
+        bottom: 4px;
+        left: 4px;
+    }
+
+    .flag {
+        font-size: 0.6em;
+        padding: 2px 6px 2px 6px;
+    }
+
+    .position-rb,
+    .date-rb {
+        font-size: 9.8px;
+    }
+
+    .cost-rb {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .product-rb {
+        max-width: 47.6%;
+    }
+
+    .product-rb.no-adv {
+        max-width: 47.6%;
+    }
+
+    .IMG-rb {
+        height: 50%;
+    }
+
+    .IMG-rb img {
+        width: 83%;
+    }
+
+    .description-headers-rb {
+        margin-bottom: 6px;
+    }    
+
+    .description-header-rb p {
+        font-size: 12px;
+    }
+
+    .cost-rb {
+        font-size: 12px;
+    }
+
+    .date-rb,
+    .position-rb {
+        font-size: 0.57em;
+        line-height: 12px;
+    }
+
+    .flags-container {
+        bottom: 4px;
+        left: 4px;
+    }
+
+    .flag {
+        padding: 0 4px 0 4px;
+        font-size: 8px;
+    }
+}

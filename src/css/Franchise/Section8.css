@@ -1,0 +1,163 @@
+.Section8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование элементов по горизонтали */
+    padding: 100px 50px 0;
+    gap: 32px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Section8 h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #142B02;
+    width: 100%;
+}
+
+.img-cont {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.img-cont img {
+    width: 30%; /* Фотографии занимают 30% ширины контейнера */
+    height: auto;
+    border-radius: 8px; /* Закругление углов */
+}
+
+.coll-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+.logo-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo-track {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+/* Добавление теней по бокам для плавного исчезновения */
+.logo-carousel::before,
+.logo-carousel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px; /* Ширина теней */
+    height: 100%;
+    pointer-events: none; /* Тени не блокируют взаимодействие с логотипами */
+    z-index: 2;
+}
+
+.logo-carousel::before {
+    left: 0;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0)); /* Градиент слева */
+}
+
+.logo-carousel::after {
+    right: 0;
+    background: linear-gradient(to left, white, rgba(255, 255, 255, 0)); /* Градиент справа */
+}
+
+.logo-track img {
+    width: 180px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-1200px); }
+}
+
+.logo-official {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.logo-official h3 {
+    font-size: 20px;
+    color: #142B02;
+}
+
+.logo-official img {
+    width: 80px;
+    height: auto;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .Franchise .Section8 {
+        padding: 50px 10px 0;
+        gap: 20px;
+        margin: 20px;
+    }
+    .Franchise .Section8 h2{
+        font-size: 32px;
+        line-height: 40px;
+        margin: 0 0 10px;
+    }
+}
+
+/* Медиа-запрос для мобильных телефонов (до 480px) */
+@media (max-width: 760px) {
+    .Franchise .Section8 {
+        padding: 0px 10px 0;
+    }
+    .Franchise .Section8 h2{
+        font-size: 20px;
+        line-height: 20px;
+        margin: 0 0 10px;
+        width: 100%;
+    } 
+    .logo-official h3 {
+        font-size: 14px;
+        color: #142B02;
+    }
+    .coll-cont{
+        margin-top: 0;
+    }
+    .logo-track img {
+        width: 140px;
+        height: auto;
+        margin-right: 10px;
+    }
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-900px); }
+    }
+    .logo-carousel::before {
+        left: 0;
+        background: linear-gradient(to right, white, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); /* Градиент слева */
+    }
+    
+    .logo-carousel::after {
+        right: 0;
+        background: linear-gradient(to left, white, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); /* Градиент справа */
+    }
+
+    @media (max-width: 760px) {
+        .img-cont {
+            display: none;
+        }
+    }
+}

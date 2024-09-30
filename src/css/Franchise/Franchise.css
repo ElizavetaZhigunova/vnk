@@ -1,0 +1,10 @@
+/* Основной стиль для больших экранов */
+.Franchise {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    isolation: isolate;
+    width: 100%;
+    height: auto;
+}

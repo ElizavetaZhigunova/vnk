@@ -1,0 +1,1950 @@
+/* .Main-mini {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; 
+    height: 1382px; 
+    margin: 0 auto; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Main-mini .name {
+    width: 441px;
+    height: 48px;
+    padding-left: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px; 
+    letter-spacing: 0.02em; 
+    color: #142B02; 
+    box-sizing: border-box;
+}
+
+.Main-mini-cont {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.products {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    display: contents;
+}
+
+.Product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 16px;
+}
+
+.Product .IMG {
+    width: 100%;
+    background: #F5F7FD;
+    border-radius: 8px;
+}
+
+.Product .IMG img {
+    width: 100%;
+    position: relative;
+    top: -1px;
+    left: -1px;
+}
+
+.Product .discription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6px 10px;
+    gap: 12px;
+    width: 100%;
+}
+
+.Product .discription-headers {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 8px;
+    width: 100%;
+}
+
+.Product .discription-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+}
+
+.Product .discription-header p {
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #63E80E;
+}
+
+.Product .discription-header-icon {
+    width: 20px;
+    height: 20px;
+    color: #63E80E;
+}
+
+.Product .cost {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #142B02;
+}
+
+.Product .discription-dawn {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 4px;
+    height: 40px;
+}
+
+.Product .position,
+.Product .date {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #B0B0B0;
+}
+
+.Product:hover {
+    border-color: #63E80E; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.Product .IMG img:hover {
+    opacity: 0.8; 
+    transform: scale(1.02); 
+    transition: all 0.3s ease-in-out; 
+}
+
+.Product .discription-header p:hover {
+    color: #1A9D02; 
+    transition: color 0.3s ease-in-out; 
+} */
+
+/* 
+123123121231
+23123123
+2312123
+2312312
+123123311
+13123
+12323123
+1231231
+*/
+/* //////////////////////////////////////////////////////////// */
+.fuel { 
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+padding: 12px;
+gap: 24px;
+
+max-width: 272px;
+height: 984px;
+
+/* Green/500 */
+background: #63E80E;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+flex-grow: 1;
+
+}
+
+.fuel-text{
+
+/* Топливо с лучшей ценой */
+
+width: 268px;
+height: 88px;
+
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+/* or 138% */
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+}
+
+.fuel-cont {
+    /* Card Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 268px;
+height: 848px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.ProductFuel .discription{
+    /* Card 4 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px;
+gap: 8px;
+
+width: 268px;
+height: 160px;
+
+/* White */
+background: #FFFFFF;
+/* Gray/50 */
+border: 1px solid #F3F3F3;
+border-radius: 16px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.ProductFuel .discription-headers {
+    /* Company&Icon */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 0px;
+
+width: 236px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.ProductFuel .discription-header {
+/* Company */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+margin: 0 auto;
+width: 204px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+}
+
+.ProductFuel .discription-header img {
+/* image 61 */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+}
+
+.ProductFuel .discription-header h6 {
+/* Антикор */
+
+width: 174px;
+height: 18px;
+
+/* H6 */
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 150% */
+letter-spacing: 0.02em;
+
+/* Black Green */
+color: #142B02;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+}
+
+.ProductFuel .discription-header-icon-cont {
+    /* Icon */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 6px;
+gap: 0px;
+
+margin: 0 auto;
+width: 32px;
+height: 32px;
+
+/* White */
+background: #FFFFFF;
+/* Gray/50 */
+border: 1px solid #F3F3F3;
+border-radius: 32px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.ProductFuel .discription-header-icon {
+/* favorite */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+color: #63E80E;
+
+}
+
+.ProductFuel line{
+    /* Line */
+
+width: 236px;
+height: 0px;
+
+/* Gray/100 */
+border: 1px solid #DDDDDD;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.ProductFuel .text-core{
+    /* Text core */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 236px;
+height: 80px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.ProductFuel .text-core .text {
+    /* Text Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 236px;
+height: 40px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.ProductFuel .text-core .text-discr {
+    /* Дизельное топливо */
+
+width: 223px;
+height: 16px;
+
+/* Medium/XS */
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+/* or 150% */
+letter-spacing: 0.02em;
+
+/* Black Green */
+color: #142B02;
+
+opacity: 0.5;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.ProductFuel .text-core .text-cost {
+    /* Text */
+
+width: 236px;
+height: 20px;
+
+/* H5 */
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+letter-spacing: 0.02em;
+
+/* Black Green */
+color: #142B02;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+
+
+
+
+.ProductFuel .text-core .button-cont {
+    /* Button&Cost */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 62px;
+
+width: 236px;
+height: 36px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.ProductFuel .text-core .button {
+    /* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 4px;
+
+margin: 0 auto;
+width: 103px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.ProductFuel .text-core .button button {
+    /* Frame 112 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 6px 12px 6px 8px;
+gap: 4px;
+
+width: 103px;
+height: 32px;
+
+/* Green/400 */
+background: #8DF04A;
+border-radius: 32px;
+border: 0;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* В корзину */
+
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+/* Black Green */
+color: #142B02;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.ProductFuel .text-core .button .button-icon {
+    /* add */
+
+width: 15px;
+height: 15px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+.ProductFuel .text-core .button-cont .button-text{
+    /* Sale&Cost */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+padding: 0px;
+
+margin: 0 auto;
+width: 67px;
+height: 36px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.ProductFuel .text-core .button-cont .button-text .bef_cost{
+   /* 23 000₽ */
+
+width: 41px;
+height: 12px;
+
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height, or 120% */
+text-align: right;
+text-decoration-line: line-through;
+
+/* Black Green */
+color: #142B02;
+
+opacity: 0.5;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+position: relative;
+
+right: 8px;
+
+
+}
+.ProductFuel .text-core .button-cont .button-text .now_cost{
+    /* 58 000₽ */
+
+width: 67px;
+height: 24px;
+
+/* SemiBold/S */
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+letter-spacing: 0.03em;
+
+/* Black Green */
+color: #142B02;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+/* Hover effects for .ProductFuel .discription-header-icon-cont */
+.ProductFuel .discription-header-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effects for .ProductFuel .button button */
+.ProductFuel .text-core .button button:hover {
+    background-color: #7EDC3D; /* Slightly darker green on hover */
+}
+
+/* Hover effects for .ProductFuel .text-core .button .button-icon */
+.ProductFuel .text-core .button .button-icon:hover {
+    color: #4A9F22; /* Darker green icon on hover */
+}
+
+/* Hover effects for .ProductFuel .text-core .button-cont .button-text .bef_cost */
+.ProductFuel .text-core .button-cont .button-text .bef_cost:hover {
+    color: #A0A0A0; /* Example color change for old price */
+}
+
+/* Hover effects for .ProductFuel .text-core .button-cont .button-text .now_cost */
+.ProductFuel .text-core .button-cont .button-text .now_cost:hover {
+    color: #0A4800; /* Darker green for the current price */
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.Section {
+    flex: 1 1 290px; /* Минимальная ширина 290px */
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+
+    width: 100%; /* Гибкая ширина, будет изменяться в зависимости от контейнера */
+    height: auto; /* Уберите фиксированную высоту */
+    
+    /* White */
+    background: #FFFFFF;
+    /* Gray/50 */
+    border: 1px solid #F3F3F3;
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    order: 0;
+    flex-grow: 1; /* Секция будет изменять размер в зависимости от доступного пространства */
+}
+
+.Section line {
+    width: 100%; /* Линия изменяет размер вместе с секцией */
+    height: 1px;
+    border: 1px solid #F3F3F3; /* Gray/50 */
+}
+
+.Section .Header-texts {
+    /* Frame 497 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between; /* Добавлено выравнивание по сторонам */
+    padding: 0px;
+    gap: 0px;
+
+    width: 100%; /* Установлено полное ширину контейнера */
+    height: 56px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.Section .Header-text {
+    /* Frame 309 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 200px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+}
+.Section .Header-text p{
+    /* Дизельное топливо */
+
+width: 287px;
+height: 16px;
+
+/* Medium/XS */
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+/* or 150% */
+letter-spacing: 0.02em;
+
+/* Black Green */
+color: #142B02;
+
+opacity: 0.5;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.Section .Header-text h4{
+   /* Евро 5 (К5) */
+
+width: 287px;
+height: 36px;
+
+/* H4 */
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height, or 150% */
+letter-spacing: 0.02em;
+
+/* Black Green */
+color: #142B02;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+
+.Section .Header-icon{
+    /* Frame 311 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+width: 73px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.Section .Header-icon img{
+    /* image 61 */
+
+width: 24px;
+height: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.Section .Header-icon h8{
+    /* Танеко */
+
+width: 43px;
+height: 18px;
+
+/* H8 */
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 150% */
+letter-spacing: 0.02em;
+
+/* Black Green */
+color: #142B02;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.Section line{
+    /* Line 2 */
+min-width: 100%;
+height: 0px;
+/* Gray/50 */
+border: 1px solid #F3F3F3;
+/* Inside auto layout */
+flex: none;
+align-self: stretch;
+flex-grow: 0;
+
+
+}
+
+.Section .line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Элементы распределяются по левому и правому краям */
+    align-items: center;
+    padding: 0px;
+    width: 100%; /* Ширина 100%, чтобы элементы могли быть по краям */
+    height: 24px;
+    flex-grow: 0;
+}
+
+.Section .line p {
+    /* Доставка (или другие элементы p) */
+    margin: 0;
+    width: auto; /* Убираем фиксированную ширину */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #142B02;
+    opacity: 0.5;
+}
+
+.Section .line h2,.Section .line .cost {
+    /* Самовывоз, автовоз (или другие элементы h2) */
+    margin: 0;
+    width: auto; /* Убираем фиксированную ширину */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #142B02;
+    text-align: right; /* Выровнять текст по правому краю */
+    flex-shrink: 0; /* Чтобы h2 не уменьшался */
+}
+.Section .line .icon{
+    font-size: 25px;
+}
+
+.Section .line .cost {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Запрещает перенос строк */
+    align-items: center;
+    width: 119px;
+    height: 24px;
+    white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+    gap: 10px;
+}
+
+.Section .line .cost h2{
+    /* 55.000 ₽ */
+
+width: 72px;
+height: 24px;
+
+/* SemiBold/S */
+
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+letter-spacing: 0.03em;
+
+/* Black Green */
+color: #142B02;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.Section .line .cost p{
+    /* -2500 ▾ */
+
+width: 43px;
+height: 18px;
+
+/* Medium/XS */
+
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 150% */
+text-align: right;
+letter-spacing: 0.02em;
+
+/* Green/600 */
+color: #439F00;
+
+opacity: 0.5;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.Section .line .cost .costDawn{
+color: #C40300;
+}
+.Section .line button {
+/* Frame 112 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 6px 12px 6px 8px;
+gap: 4px;
+
+width: 103px;
+height: 32px;
+
+/* Green/400 */
+background: #8DF04A;
+border-radius: 32px;
+border: 0;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.Section .line .cost .buy{
+    /* Купить */
+
+width: 42px;
+height: 16px;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+/* Black Green */
+color: #142B02;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+/* ////////////////////////////////// */
+.FuelCont {
+
+   /* Card Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+align-content: flex-start;
+padding: 0px;
+gap: 24px;
+
+min-width: 800px;
+height: 770px;
+overflow-y: hidden;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.BestFuelCont{
+    /* Section */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 72px;
+gap: 32px;
+
+min-width: 800px;
+height: 1000px;
+
+
+}
+.BestFuelCont .HeaderFuel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Размещаем заголовок и ссылку по краям */
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    padding: 0;
+}
+
+.BestFuelCont .HeaderFuel h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #183203;
+    margin: 0;
+}
+
+.BestFuelCont .HeaderFuel p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+
+    /* ///////// */
+    /* Франшиза */
+
+
+
+/* SemiBold/S */
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+letter-spacing: 0.03em;
+
+/* Green/600 */
+color: #439F00;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.BestFuelCont .Buttons{
+    /* Teg Container */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+min-width: 800px;
+height: 48px;
+
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+}
+.BestFuelCont .Buttons button {
+    /* тэг */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 20px;
+gap: 0px;
+
+width: auto;
+height: 48px;
+
+background: #F5F7FD;
+border-radius: 32px;
+border: 0;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+/* >>>>>>>>>>>>>>>>>>> */
+/* Дизельное топливо */
+
+
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+color: #272727;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.BestFuelCont .Buttons button:active {
+background: rgba(154, 225, 105, 0.2);
+color: #70A44D;
+}
+
+
+.Section:hover {
+    background: #F9F9F9; /* Light gray background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    transition: background 0.3s ease-in-out,  box-shadow 0.3s ease-in-out; /* Smooth transition for background and border color changes */
+
+}
+
+.Section .line button:hover {
+    background: #7EDC3D; /* Darker green background on hover */
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for background and text color changes */
+}
+
+.BestFuelCont .Buttons button:hover {
+    background: #E0E0E0; /* Light gray background on hover */
+    color: #272727; /* Darker text color on hover */
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for background and text color changes */
+}
+
+@media (max-width: 1000px) {
+    
+    .Main-mini-cont {
+        margin: 0;
+        box-sizing: border-box;
+        min-width: 300px;
+        max-width: 100%; /* Убедитесь, что контейнер не превышает ширину экрана */
+        width: auto; /* Используйте auto для гибкости */
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+            
+    }
+    
+    .products {
+        box-sizing: border-box;
+        max-width: 100%; /* Убедитесь, что ширина не превышает ширину экрана */
+        height: 560px;
+        overflow: hidden; /* Позволяет прокрутку, если содержимое превышает размеры контейнера */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: var(--position, flex-start);
+        gap: 20px 8px;
+    }
+    
+    .Product {
+        /* Card */
+        box-sizing: border-box;
+    
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+    
+        width: 142px;
+        height: 264px;
+    
+        background: #FFFFFF;
+        /* Gray/100 */
+        border: 0.5px solid #DDDDDD;
+        border-radius: 8px;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .Product .IMG {
+        /* Image&Teg */
+        width: 142px;
+        height: 142px;
+        
+        background: #F5F7FD;
+        border-radius: 8px;
+        position: relative;
+        left: -1px;
+        top: -1px;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .Product .IMG img {
+        /* Image */
+        width: 142px;
+        height: 142px;
+        left: 0px;
+        top: 0px;
+    
+        border-radius: 0px;
+    }
+    .Product .discription {
+        /* Text Container */
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4px 6px;
+        gap: 8px;
+    
+        width: 142px;
+        height: 114px;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .Product .discription-headers {
+        padding: 0px;
+        width: 130px;
+        height: 36px;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .Product .discription-header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 12px;
+    
+        width: 130px;
+        height: 36px;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .Product .discription-header p {
+        /* Primary Link */
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 4px;
+        font-size: 12px;
+        width: 106px;
+        height: 36px;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    .Product .discription-header-icon {
+        /* favorite */
+        width: 12px;
+        height: 12px;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .Product .cost {
+        width: 130px;
+        height: 18px;
+    
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+    
+        color: #142B02;
+    
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        position: relative;
+        top: -5px;
+    }
+    .Product .discription-dawn {
+        /* Date&Place */
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+    
+        width: 130px;
+        height: 40px;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        margin-top: 15px;
+    }
+    .Product .position {
+        /* г. Краснодар, ул. Пушкина, 59 */
+        width: 130px;
+        height: 24px;
+    
+        /* Medium/XXS */
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        /* or 120% */
+        display: flex;
+        align-items: flex-end;
+    
+        /* Gray/500 */
+        color: #868686;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    .Product .date {
+        /* 25 августа 2024 */
+        width: 130px;
+        height: 12px;
+    
+        /* Medium/XXS */
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        /* identical to box height, or 120% */
+    
+        /* Gray/500 */
+        color: #868686;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .Main-mini {
+        /* Recomendation */
+    
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    min-width: 300px;
+    height: auto;
+    left: calc(50% - 1440px/2);
+    padding: 0px;
+
+    }
+    .Main-mini .name {
+        font-size: 25px;
+    }
+    .fuel {
+        /* Offer */
+    
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 12px;
+        gap: 16px;
+    
+        min-width: 300px;
+        max-width: none;
+        height: 216px;
+    
+        /* Green/500 */
+        background: #63E80E;
+        border-radius: 32px;
+    
+        /* Inside auto layout */
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+        overflow: hidden;
+    }
+    
+    .fuel-text {
+        /* Удобрение с лучшей ценой */
+        width: 100%; /* Сделайте текст занимать всю ширину контейнера */
+        height: 36px;
+    
+        /* H4 */
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 36px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+    
+    .fuel-cont {
+        /* Card Container */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between; /* Распределяет элементы равномерно */
+        padding: 0;
+        gap: 12px;
+    
+        width: 100%; /* Занимает всю доступную ширину контейнера */
+        height: auto; /* Устанавливаем высоту в авто для гибкости */
+        max-height: 848px; /* Ограничиваем максимальную высоту */
+    }
+    
+    .ProductFuel {
+        /* Ensure each ProductFuel takes up one-third of the container width */
+        width: calc(63.33% - 120px); /* Учитывает промежутки между элементами */
+        box-sizing: border-box;
+        overflow: hidden; /* Избегаем выхода содержимого за пределы блока */
+    }
+    
+    
+    .ProductFuel .discription {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 8px;
+    
+        width: 100%;
+        height: auto; /* Устанавливаем высоту в авто для гибкости */
+        max-height: 160px; /* Ограничиваем максимальную высоту */
+        background: #FFFFFF;
+        border: 1px solid #F3F3F3;
+        border-radius: 16px;
+        overflow: hidden; /* Избегаем выхода содержимого за пределы блока */
+    }
+    
+    .ProductFuel .discription-headers {
+        /* Company&Icon */
+    
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 0px;
+    
+        width: 100%; /* Используем всю доступную ширину */
+        max-width: 236px; /* Ограничиваем максимальную ширину */
+        height: 32px;
+    }
+    
+    .ProductFuel .discription-header {
+        /* Company */
+    
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 6px;
+    
+        width: calc(100% - 32px); /* Учитываем ширину иконки */
+        height: 24px;
+    }
+    
+    .ProductFuel .discription-header img {
+        /* image 61 */
+        width: 24px;
+        height: 24px;
+    }
+    
+    .ProductFuel .discription-header h6 {
+        /* Антикор */
+    
+        width: auto; /* Автоматическая ширина */
+        max-width: 100%; /* Не превышает ширину родителя */
+        height: 18px;
+    
+        /* H6 */
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+    
+        /* Black Green */
+        color: #142B02;
+    }
+    
+    .ProductFuel .discription-header-icon-cont {
+        /* Icon */
+        box-sizing: border-box;
+    
+        /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 6px;
+        gap: 0px;
+    
+        width: 32px;
+        height: 32px;
+        background: #FFFFFF;
+        border: 1px solid #F3F3F3;
+        border-radius: 32px;
+    }
+    
+    .ProductFuel .discription-header-icon {
+        /* favorite */
+        width: 20px;
+        height: 20px;
+        color: #63E80E;
+    }
+    
+    .ProductFuel line {
+        /* Line */
+        width: 100%; /* Используем всю доступную ширину */
+    }
+    
+    .ProductFuel .text-core {
+        /* Text core */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+    
+        width: 100%; /* Используем всю доступную ширину */
+        max-width: 236px; /* Ограничиваем максимальную ширину */
+        height: auto; /* Устанавливаем высоту в авто для гибкости */
+    }
+    
+    .ProductFuel .text-core .text {
+        /* Text Container */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+    
+        width: 100%; /* Используем всю доступную ширину */
+        height: auto; /* Устанавливаем высоту в авто для гибкости */
+    }
+    
+    .ProductFuel .text-core .text-discr {
+        /* Дизельное топливо */
+        width: 100%; /* Используем всю доступную ширину */
+        height: 16px;
+    
+        /* Medium/XS */
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+    
+        /* Black Green */
+        color: #142B02;
+        opacity: 0.5;
+    }
+    
+    .ProductFuel .text-core .text-cost {
+        /* Text */
+        width: 100%; /* Используем всю доступную ширину */
+        height: 20px;
+    
+        /* H5 */
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+    
+        /* Black Green */
+        color: #142B02;
+    }
+    
+    .ProductFuel .text-core .button-cont {
+        /* Button&Cost */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 16px; /* Увеличиваем промежуток для гибкости */
+    
+        width: 100%; /* Используем всю доступную ширину */
+        height: 36px;
+    }
+    
+    .ProductFuel .text-core .button {
+        /* Button */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 4px;
+    
+        width: auto; /* Автоматическая ширина */
+        height: 32px;
+    }
+    
+    .ProductFuel .text-core .button button {
+        /* Frame 112 */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 12px 6px 8px;
+        gap: 4px;
+    
+        background: #8DF04A;
+        border-radius: 32px;
+        border: 0;
+    
+        /* В корзину */
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: #142B02;
+    }
+    
+    .ProductFuel .text-core .button .button-icon {
+        /* add */
+        width: 15px;
+        height: 15px;
+    }
+    
+    .ProductFuel .text-core .button-cont .button-text {
+        /* Sale&Cost */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0px;
+    
+        width: auto; /* Автоматическая ширина */
+        height: 36px;
+    }
+    
+    .ProductFuel .text-core .button-cont .button-text .bef_cost {
+        /* 23 000₽ */
+        width: auto; /* Автоматическая ширина */
+        height: 12px;
+    
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: right;
+        text-decoration-line: line-through;
+    
+        color: #142B02;
+        opacity: 0.5;
+    }
+    
+    .ProductFuel .text-core .button-cont .button-text .now_cost {
+        /* 58 000₽ */
+        width: auto; /* Автоматическая ширина */
+        height: 24px;
+    
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    
+        color: #142B02;
+    }
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+    
+
+    .FuelCont {
+
+        /* Card Container */
+     
+     /* Auto layout */
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center;
+     align-content: flex-start;
+     padding: 0px;
+     gap: 24px;
+     
+     min-width: 300px;
+     height: 1160px;
+     overflow-y: hidden;
+     
+     
+     /* Inside auto layout */
+     flex: none;
+     order: 2;
+     align-self: stretch;
+     flex-grow: 0;
+
+     
+     }
+     .BestFuelCont{
+         /* Section */
+     
+     /* Auto layout */
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     padding: 0px 10px;
+     gap: 32px;
+     
+     min-width: 300px;
+     height: auto;
+     }
+     .BestFuelCont .HeaderFuel {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between; /* Размещаем заголовок и ссылку по краям */
+         align-items: center;
+         width: 100%;
+         height: 48px;
+         padding: 0;
+     }
+     
+     
+     
+     
+     .BestFuelCont .Buttons{
+         /* Teg Container */
+     
+     /* Auto layout */
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     padding: 0px;
+     gap: 12px;
+     
+     min-width: 300px;
+     max-height: 100%;
+     overflow: hidden;
+     height: 48px;
+     
+     
+     
+     /* Inside auto layout */
+     flex: none;
+     order: 1;
+     align-self: stretch;
+     flex-grow: 0;
+     
+     }
+
+
+.BestFuelCont .Buttons button {
+    /* тэг */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 20px;
+gap: 0px;
+
+width: auto;
+height: 28px;
+
+background: #F5F7FD;
+border-radius: 32px;
+border: 0;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+/* >>>>>>>>>>>>>>>>>>> */
+/* Дизельное топливо */
+
+
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+color: #272727;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+     
+.BestFuelCont .HeaderFuel h2 {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #183203;
+    margin: 0;
+    font-weight: 700;
+}
+
+.BestFuelCont .HeaderFuel p {
+
+
+/* SemiBold/S */
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+/* identical to box height, or 150% */
+letter-spacing: 0.03em;
+
+/* Green/600 */
+color: #439F00;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+}

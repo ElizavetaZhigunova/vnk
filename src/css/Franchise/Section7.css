@@ -1,0 +1,122 @@
+.Section7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 50px 0; /* Уменьшено расстояние от верхнего края */
+    gap: 32px; /* Уменьшен промежуток между заголовком и блоками */
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.Section7 h2 {
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px; /* Уменьшен размер текста заголовка */
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #142B02;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.Section7 .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два блока в строке */
+    gap: 20px; /* Промежуток между блоками */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Section7 .cards .card:nth-child(odd):last-child {
+    grid-column: span 2; /* Пусть последняя одиночная карточка занимает всю ширину */
+    justify-self: center; /* Центрирование самой карточки */
+    width: 50%;
+}
+
+
+.Section7 .card {
+    border: 2px solid #76c93780; /* Зеленая обводка */
+    padding: 15px; /* Уменьшены внутренние отступы */
+    width: 100%;
+    background-color: #fff;
+    border-radius: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Для выравнивания текста */
+    min-height: 200px; /* Уменьшена минимальная высота блоков */
+}
+
+.Section7 .card .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px; /* Уменьшено расстояние между заголовком и содержимым */
+}
+
+.Section7 .card h3 {
+    font-size: 20px; /* Уменьшен размер текста */
+    color: #142B02;
+    margin-top: 0;
+    margin-bottom: auto; /* Прижать к верху */
+}
+
+.Section7 .card p {
+    font-size: 20px; /* Уменьшен размер текста */
+    color: #142b02a9;
+    line-height: 1.3; /* Сделано более компактным */
+    margin-top: auto; /* Прижать к низу */
+}
+
+.Section7 button {
+    margin-bottom: 30px; /* Уменьшено расстояние до кнопки */
+    padding: 10px 20px; /* Уменьшены отступы внутри кнопки */
+    border: 1px solid #63E80E;
+    border-radius: 8px;
+    font-size: 1.2vw; /* Уменьшен размер текста на кнопке */
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-align: center;
+    align-self: center;
+    background-color: #63E80E; /* Цвет кнопки */
+    font-weight: 500;
+}
+@media (max-width: 1024px) {
+    .Section7 .card p {
+        font-size: 16px; /* Уменьшен размер текста */
+    }
+    .Section7 {
+        padding: 100px 10px 0; /* Уменьшено расстояние от верхнего края */
+    }
+
+    .Section7 button {
+        font-size: 2.4vw; /* Уменьшен размер текста на кнопке */
+    }
+}
+@media (max-width: 760px) {
+    .Section7 .card p {
+        font-size: 20px; /* Уменьшен размер текста */
+    }
+    .Section7 .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .Section7 .cards .card:nth-child(odd):last-child {
+        width: 100%;
+    }
+    .Section7 button {
+        font-size: 3.4vw; /* Уменьшен размер текста на кнопке */
+    }
+}
+@media (max-width: 400px) {
+    .Section7 .card p {
+        font-size: 16px; /* Уменьшен размер текста */
+    }
+    .Section7 button {
+        font-size: 4.4vw; /* Уменьшен размер текста на кнопке */
+    }
+}

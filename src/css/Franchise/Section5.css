@@ -1,0 +1,106 @@
+.Section5 {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 150px 72px 0;
+gap: 64px;
+width: 100%;
+height: auto;
+box-sizing: border-box;
+margin-bottom: 50px;
+}
+.Section5 .text h2{
+box-sizing: border-box;
+margin: 10px 0 50px;
+width: 50%;
+height: auto;
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 48px;
+text-align: left;
+letter-spacing: 0.02em;
+color: #142B02;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+.Section5 .text p{
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 48px;
+    text-align: left;
+    letter-spacing: 0.02em;
+    color: #142B02;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.Section5 img {
+    width: 100%; /* Картинка занимает всю ширину экрана */
+    max-width: 1000px;
+    height: auto; /* Высота подстраивается автоматически для сохранения пропорций */
+    object-fit: cover; /* Картинка сохраняет пропорции */
+}
+@media (min-width: 1500px) {
+    .Section5 {
+        flex-direction: row;
+        gap: 0;
+    }
+    .Section5 .text{
+        min-width: 600px;
+    }
+    .Section5 .text p{
+        width: 80%;
+    }
+    .Section5 img {
+        width: calc(100% - 600px);
+    }
+}
+@media (max-width: 1024px) {
+    .Franchise .Section5 {
+        padding: 100px 10px 0;
+    }
+    .Franchise .Section5 h2{
+        font-size: 32px;
+        line-height: 40px;
+        margin: 0 0 10px;
+    }
+    .Franchise .Section5 p{
+        font-size: 20px;
+        line-height: 22px;
+        width: 80%;
+    }
+
+}
+
+/* Медиа-запрос для мобильных телефонов (до 480px) */
+@media (max-width: 760px) {
+    .Franchise .Section5 {
+        padding: 50px 10px 0;
+    }
+    .Franchise .Section5 h2{
+        font-size: 20px;
+        line-height: 20px;
+        margin: 0 0 10px;
+        width: 100%;
+    }
+    .Franchise .Section5 p{
+        font-size: 16px;
+        line-height: 18px;
+        width: 100%;
+    }
+    .Section5 img {
+        margin: 0 auto;
+        width: 100%; /* Картинка занимает всю ширину экрана */
+        max-width: 300px;
+        height: auto; /* Высота подстраивается автоматически для сохранения пропорций */
+        object-fit: cover; /* Картинка сохраняет пропорции */
+    }
+}

@@ -1,0 +1,107 @@
+.pop-up-container-mobile {
+    max-width: 100%;
+    background: white;
+    border-radius: 32px;
+    box-shadow: 0 2px 32px rgba(102, 111, 145, .18);
+    position: absolute;
+    bottom: -308px;
+    right: 0;
+    padding: 20px 36px 32px 36px;
+    z-index: 3;
+}
+
+.pop-up-header-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.pop-up-title-mobile {
+    font-family: 'Manrope';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #142B02;
+}
+
+.pop-up-close-btn-mobile {
+    width: 25px;
+    height: 25px;
+}
+
+.pop-up-content-container-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pop-up-content-category-item-mobile {
+    width: max-content;
+    padding: 10px 12px 10px 12px;
+    border-radius: 12px;
+    background: #EAEAEA;
+
+}
+
+.pop-up-content-category-item-mobile p {
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #142B02;
+}
+
+@media screen and (min-width: 536px) and (max-width: 622px) {
+    .pop-up-container-mobile {
+        bottom: -330px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 535px) {
+    .pop-up-container-mobile {
+        max-width: 92%;
+        left: 0;
+        top: 115px;
+        height: max-content;
+        padding: 20px 12px 32px 12px;
+    }
+
+    .pop-up-title-mobile {
+        font-size: 20px;
+    }
+
+    .pop-up-content-category-item-mobile p {
+        font-size: 14px;
+    }
+
+    .pop-up-content-category-item-mobile {
+        padding: 10px 12px 10px 12px;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .pop-up-container-mobile {
+        max-width: 92%;
+        left: 0;
+        top: 115px;
+        height: max-content;
+        padding: 20px 12px 32px 12px;
+    }
+
+    .pop-up-title-mobile {
+        font-size: 20px;
+    }
+
+    .pop-up-content-category-item-mobile p {
+        font-size: 14px;
+    }
+
+    .pop-up-content-category-item-mobile {
+        padding: 10px 12px 10px 12px;
+    }
+}

@@ -1,0 +1,9 @@
+.HedAdv{
+    width: 100%;
+    height: 64px;
+    z-index: 51;
+}
+.HedAdv img{
+    width: 100%;
+    height: auto;
+}

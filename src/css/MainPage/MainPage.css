@@ -1,0 +1,11 @@
+.MainPage {
+    padding: 0px 72px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+@media (max-width: 1024px) {
+    .MainPage {
+        padding: 0px 10px;
+    }
+}
