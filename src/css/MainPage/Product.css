@@ -86,6 +86,13 @@
     transition: color 0.3s ease-in-out; 
     width: calc(100% - 20px);
 }
+.Product:hover .discription-header p {
+    color: black;
+}
+
+/* .Product .discription-header p:hover {
+    color:#142B02;
+} */
 
 .Product .discription-header-icon {
     width: 20px;
