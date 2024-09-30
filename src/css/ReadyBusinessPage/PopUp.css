@@ -18,7 +18,6 @@
 }
 
 .pop-up-title {
-    font-family: 'Manrope';
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
@@ -64,7 +63,6 @@
 }
 
 .pop-up-content-category-item p {
-    font-family: 'Manrope';
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;

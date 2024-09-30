@@ -3,7 +3,6 @@
 }
 
 .readyBusiness-recommendations-title {
-    font-family: 'Manrope';
     font-size: 36px;
     font-weight: 700;
     line-height: 48px;
@@ -38,7 +37,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Manrope';
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
