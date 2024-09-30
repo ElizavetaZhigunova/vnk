@@ -8,6 +8,13 @@ import { GrMoney } from "react-icons/gr";
 import advertisement from "../assets/images/HedAdv/advertisement.png";
 import advertisement1 from "../assets/images/HedAdv/advertisement (1).png";
 import advertisement2 from "../assets/images/HedAdv/advertisement (2).png";
+
+import img1 from "../assets/images/Icons/Icon_1.png"
+import img2 from "../assets/images/Icons/Icon_2.png"
+import img3 from "../assets/images/Icons/Icon_3.png"
+import img4 from "../assets/images/Icons/Icon_4.png"
+import img5 from "../assets/images/Icons/Icon_5.png"
+
 import '../css/Header.css';
 import '../css/HeaderAdv.css';
 
@@ -123,23 +130,23 @@ export default function Header({ SwapPage }) {
                 {/* Добавляем фиксированную панель внизу экрана для малых экранов */}
                 <div className="BottomPanel">
                     <div className="panel-icon panel-icon-green">
-                        <HiSearch />
+                        <img src={img2}/>
                         <p>Поиск</p>
                     </div>
                     <div className="panel-icon">
-                        <MdFavoriteBorder   />
+                        <img src={img3}/>
                         <p>Избранное</p>
                     </div>
                     <div className="panel-icon">
-                        <MdOutlineAddToPhotos   />
+                        <img src={img4}/>
                         <p>Объявления</p>
                     </div>
                     <div className="panel-icon">
-                        <MdMailOutline   />
+                        <img src={img1}/>
                         <p>Сообщения</p>
                     </div>
                     <div className="panel-icon">
-                        <BsPerson />
+                        <img src={img5}/>
                         <p>Войти</p>
                     </div>
                 </div>
