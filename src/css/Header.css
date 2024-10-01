@@ -172,7 +172,7 @@ font-size: 16px;
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    gap: 32px;
+    gap: 20px;
 
     min-width: 800px;
     height: 72px;
@@ -252,7 +252,7 @@ font-size: 20px;
 .search-input {
     box-sizing: border-box;
     flex-grow: 1; /* Позволяет input занимать всё доступное пространство */
-    min-width: 0px;
+    min-width: 10px;
     padding: 0 16px; /* Отступы внутри поля ввода */
     border: none; /* Убираем бордер для input */
     border-radius: 32px; /* Чтобы был такой же радиус, как у контейнера */
@@ -305,7 +305,7 @@ flex-direction: row;
 align-items: center;
 padding: 0px;
 
-width: 270px;
+width: 280px;
 height: 72px;
 left: 966px;
 top: 0px;
@@ -322,8 +322,12 @@ top: 0px;
     height: auto; /* Меняем на auto, чтобы контейнер мог расширяться по высоте */
     left: 966px;
     top: 0px;
-    font-size: 20px;
+    font-size: 14px;
     color:#266d00;
+    margin-left: 10px;
+}
+.Icons-container svg{
+    font-size:24px;
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
