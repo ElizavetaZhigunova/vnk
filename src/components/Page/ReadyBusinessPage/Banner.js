@@ -3,7 +3,7 @@ import "../../../css/ReadyBusinessPage/Banner.css";
 import { PopUp } from "./PopUp";
 import { PopUpMobile } from "./PopUpMobile";
 
-export const Banner = ({ title, image, franchise }) => {
+export const Banner = ({ title, image, franchise, handleClickReadyBusiness }) => {
   const [visibleCategories, setVisibleCategories] = useState(6);
   const [lastCategory, setLastCategory] = useState("Все категории →");
   const [visiblePopUp, setVisiblePopUp] = useState(false);
@@ -49,7 +49,7 @@ export const Banner = ({ title, image, franchise }) => {
   };
 
   return (
-    <div className="readyBusinessPage-banner-container">
+    <div className="readyBusinessPage-banner-container" onClick={franchise ? undefined : handleClickReadyBusiness}>
       <div className={`readyBusinessPage-banner ${franchise && "franchise"}`}>
         <span className="readyBusinessPage-banner-title">{title}</span>
         <div

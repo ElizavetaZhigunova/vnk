@@ -6,16 +6,20 @@ import { Banner } from "./Banner";
 import AdvSlider from "../MainPage/AdvSlider";
 import { Recommendations } from "./Recommendations";
 
-export default function ReadyBusinessPage() {
-
-  return (<>
+export default function ReadyBusinessPage({SwapPage}) {
+  const handleClickReadyBusiness = () => {};
+  return (
+    <>
       <div className="readyBusinessPage">
-        
-        <Banner title="Готовый бизнес" image={Bag} />
+        <Banner
+          title="Готовый бизнес"
+          image={Bag}
+          handleClickReadyBusiness={handleClickReadyBusiness}
+        />
         <Banner title="Франшиза" image={Franchise} franchise />
         <AdvSlider />
-        
       </div>
-      <Recommendations/>
-  </>)
+      <Recommendations />
+    </>
+  );
 }
