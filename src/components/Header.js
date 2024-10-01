@@ -17,6 +17,7 @@ import {
   MdOutlineDesignServices,
   MdFavoriteBorder,
 } from "react-icons/md";
+import { TbMessageCircle } from "react-icons/tb";
 import { FaFlask } from "react-icons/fa";
 import { GrMoney } from "react-icons/gr";
 import advertisement from "../assets/images/HedAdv/advertisement.png";
@@ -249,8 +250,20 @@ export default function Header({ SwapPage }) {
             <div className="Icons">
               {isWideScreen && (
                 <div className="Icons-container">
+                  <AiOutlineShoppingCart />
+                  Корзина
+                </div>
+              )}
+              {isWideScreen && (
+                <div className="Icons-container">
                   <HiOutlineHeart />
                   Избранное
+                </div>
+              )} 
+              {isWideScreen && (
+                <div className="Icons-container">
+                  <TbMessageCircle />
+                  Сообщение
                 </div>
               )}
               <div
@@ -260,12 +273,6 @@ export default function Header({ SwapPage }) {
                 <BsPerson />
                 Войти
               </div>
-              {isWideScreen && (
-                <div className="Icons-container">
-                  <AiOutlineShoppingCart />
-                  Корзина
-                </div>
-              )}
             </div>
           </div>
 
