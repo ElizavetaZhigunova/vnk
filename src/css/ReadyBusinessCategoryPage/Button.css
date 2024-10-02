@@ -1,0 +1,12 @@
+.ready-business-button {
+    background: #63E80E;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}

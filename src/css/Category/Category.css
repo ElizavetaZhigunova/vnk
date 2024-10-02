@@ -1,0 +1,67 @@
+.Category {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Block {
+    position: relative;
+    width: 23%; /* Каждый блок занимает 25% с учетом отступов */
+    height: 214px;
+    margin: 1%;
+    overflow: hidden; /* Обрезаем картинку, которая выходит за границы */
+    border: 0px solid; /* Для наглядности, можно убрать */
+    border-radius: 24px;
+    box-sizing: border-box;
+    background-color: #FFF7D4;
+}
+
+.Block h3 {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    margin: 0;
+    font-size: 20px;
+    flex-wrap: 600;
+}
+
+.Block img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: auto;
+    object-fit: cover; 
+}
+.Block:hover {
+    cursor: pointer;
+}
+@media (max-width: 1360px) {
+    .Block {
+        height: 164px;
+    }
+    .Block img {
+        width: 100px;
+    }
+}
+@media (max-width: 1024px) {
+    .Block {
+        height: 132px;
+    }
+    .Block img {
+        width: 100px;
+    }
+}
+@media (max-width: 760px) {
+    .Block h3 {
+        font-size: 14px;
+    }
+    .Block {
+        width: 48%;
+        height: 106px;
+    }
+    .Block img {
+        width: 70px;
+    }
+}

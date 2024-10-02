@@ -1,0 +1,42 @@
+.ready-business-category-title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ready-business-category-path {
+    display: flex;
+    align-items: center;
+}
+
+.ready-business-category-path-item {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #5E5E5E;
+}
+
+.chevron {
+    margin: 0 8px;
+}
+
+.ready-business-category-path-item-hovered {
+    border-bottom: 1px solid transparent;
+    /* Прозрачная граница в обычном состоянии */
+    transition: border-color 0.3s ease;
+    /* Плавный переход цвета границы */
+    cursor: pointer;
+}
+
+.ready-business-category-path-item-hovered:hover {
+    border-bottom-color: #5E5E5E;
+    /* Цвет границы при наведении */
+}
+
+.ready-business-category-title {
+    margin-top: 8px;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #142B02;
+}
