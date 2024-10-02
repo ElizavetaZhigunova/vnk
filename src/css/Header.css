@@ -197,6 +197,9 @@ font-size: 16px;
     order: 0;
     flex-grow: 0;
 }
+.Logo img {
+ width: 40%;
+}
 .Logo button {
 
 display: flex;
