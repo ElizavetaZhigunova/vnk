@@ -39,7 +39,7 @@ import { useNavigate } from "react-router-dom";
 const Category = () => {
     const navigate = useNavigate()
     const handleGoToPage = (page) => {
-        navigate(`/${page}`);
+        navigate(`${page}`);
       };
   return (
     <div className="category-cont">
@@ -63,7 +63,7 @@ const Category = () => {
           <GrMoney />
           <p>Реализация урожая</p>
         </div>
-        <div className="category" onClick={() => handleGoToPage("ready-business")}>
+        <div className="category" onClick={() => handleGoToPage("ready-business-main")}>
           <MdOutlineAssuredWorkload />
           <p>Готовый бизнес</p>
         </div>
