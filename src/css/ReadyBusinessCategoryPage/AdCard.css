@@ -1,0 +1,144 @@
+.ad-card {
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.ad-card-img-container {
+    max-width: 40%;
+    border-radius: 24px;
+}
+
+.ad-card-img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.ad-card-info-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    justify-content: space-around;
+}
+
+.ad-card-info-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.ad-card-info-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #439F00;
+}
+
+.ad-card-info-icon {
+    color: #439F00;
+    cursor: pointer;
+}
+
+.ad-card-info-tags-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.ad-card-info-tag {
+    background: #8DF04A;
+    padding: 2px 8px 4px 8px;
+    border-radius: 49px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    color: #142B02;
+}
+
+.ad-card-info-price {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #142B02;
+    margin-bottom: 12px;
+}
+
+.ad-card-info-desc {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    color: #868686;
+    margin-bottom: 12px;
+}
+
+.ad-card-info-location-created {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #868686;
+}
+
+.ad-card-company-info-container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.ad-card-company-info-img-container {
+    max-width: 45%;
+    height: auto;
+}
+
+.ad-card-company-info-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ad-card-company-info-title {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    color: #142B02;
+}
+
+.ad-card-company-info-reviews-container {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #727272;
+}
+
+.ad-card-company-info-btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-card-btn {
+    max-width: 100%;
+}
+
+.ad-card-btn.call {
+    margin-bottom: 8px;
+}
+
+.ad-card-btn.write {
+    background: inherit;
+    border: 1px solid #63E80E;
+    color: #439F00;
+}

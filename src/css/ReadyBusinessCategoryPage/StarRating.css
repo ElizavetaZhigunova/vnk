@@ -1,0 +1,46 @@
+.stars-container {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.star {
+    display: inline-block;
+    font-size: 20px;
+    color: #ccc;
+    /* Цвет пустых звезд */
+    position: relative;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.star-count {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #142B02;
+}
+
+.star-inner {
+    display: block;
+    position: relative;
+    z-index: 1;
+    color: #ccc;
+    /* Цвет заполненных звезд */
+}
+
+.star-inner.half {
+    background: linear-gradient(90deg, #FFD700 50%, #ccc 50%);
+    background-clip: text;
+    color: transparent;
+    /* Прозрачный текст, который заменяется градиентом */
+}
+
+.star-inner.filled {
+    color: #FFD700;
+}
