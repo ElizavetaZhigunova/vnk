@@ -134,6 +134,10 @@ export default function Header({ SwapPage }) {
     };
   }, [scrollPosition]);
 
+  const handleGoToPage = (page) => {
+    navigate(`/${page}`);
+  };
+
   // Отрисовка другого хедера, если ширина экрана меньше 730 пикселей
   if (isSmallScreen) {
     return (
@@ -148,11 +152,11 @@ export default function Header({ SwapPage }) {
               src={Logo}
               alt="Logo"
               className="logo-small"
-              onClick={() => SwapPage("MainPage")}
+              onClick={() => handleGoToPage("")}
             />
             <div
               className="Icons-container"
-              onClick={() => SwapPage("FranchisePage")}
+              onClick={() => handleGoToPage("franchise")}
             >
               <HiOutlineLocationMarker />
             </div>
@@ -197,9 +201,7 @@ export default function Header({ SwapPage }) {
     );
   }
 
-  const handleGoToPage = (page) => {
-    navigate(`/${page}`);
-  };
+  
 
   return (
     <>
